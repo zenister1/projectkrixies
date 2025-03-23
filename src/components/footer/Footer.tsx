@@ -20,15 +20,13 @@ const Footer = () => {
               ลายดอก ผ้าชีฟอง มีดีเทล เปิดมานาน 12 ปี การันตีคุณภาพ
             </p>
             <div className="flex space-x-3">
-              <Link href="https://lin.ee/35BFvmQ" target="_blank" className="text-gray-600 hover:text-black">
-  		<SiLine size={20} />
-		</Link>
-              <Link href="https://www.instagram.com/icyicyofficial/" target="_blank" className="text-gray-600 hover:text-black">
-                <Instagram size={20} />
-              </Link>
-            </div>
-          </div>
-
+  		<Link href="https://lin.ee/35BFvmQ" target="_blank" className="text-gray-600 hover:text-black">
+    		<SiLine size={20} />
+ 		 </Link>
+  		<Link href="https://t.me/yourusername" target="_blank" className="text-gray-600 hover:text-black">
+  		  <SiTelegram size={20} />
+ 		</Link>
+		</div>
           {/* Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-icyicy-dark">เมนูช่วยเหลือ</h3>
