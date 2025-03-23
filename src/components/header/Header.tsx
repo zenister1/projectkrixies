@@ -2,7 +2,8 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Facebook, Instagram, Menu, ShoppingCart, User, Heart } from 'lucide-react';
+import { SiLine, SiTelegram } from 'react-icons/si'; // ✅ ใช้ icons ใหม่
+import { Menu, ShoppingCart, User, Heart } from 'lucide-react';
 import Logo from './Logo';
 import NavMenu from './NavMenu';
 import { Button } from '@/components/ui/button';
@@ -15,12 +16,10 @@ const Header = () => {
 
   return (
     <header className="w-full">
-      {/* Top header with promotion */}
       <div className="bg-icyicy-beige text-icyicy-dark text-xs py-2 px-4 text-center">
         <span className="font-medium">ซื้อครบ 2,000 บาท ลด 5% | ซื้อครบ 3,000 บาท ลด 10%</span>
       </div>
 
-      {/* Secondary header with account/language */}
       <div className="bg-white py-2 px-4 flex justify-between items-center border-b text-sm">
         <div className="flex items-center space-x-4">
           <Link href="/login" className="hover:underline text-gray-700">
@@ -35,11 +34,13 @@ const Header = () => {
         </div>
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-2">
-            <Link href="https://www.facebook.com/icyicyshop" target="_blank" aria-label="Facebook">
-              <Facebook size={16} className="text-gray-600 hover:text-gray-900" />
+            {/* ✅ LINE */}
+            <Link href="https://lin.ee/35BFvnQ" target="_blank" aria-label="LINE">
+              <SiLine size={16} className="text-gray-600 hover:text-gray-900" />
             </Link>
-            <Link href="https://www.instagram.com/icyicyofficial/" target="_blank" aria-label="Instagram">
-              <Instagram size={16} className="text-gray-600 hover:text-gray-900" />
+            {/* ✅ Telegram */}
+            <Link href="https://t.me/krixieshop" target="_blank" aria-label="Telegram">
+              <SiTelegram size={16} className="text-gray-600 hover:text-gray-900" />
             </Link>
           </div>
           <div className="relative group">
@@ -61,7 +62,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Main header with logo and navigation */}
       <div className="bg-white py-4 px-6 flex justify-between items-center">
         <div className="md:hidden">
           <MobileMenu />
@@ -100,3 +100,4 @@ const Header = () => {
 };
 
 export default Header;
+
