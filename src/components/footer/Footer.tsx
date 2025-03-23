@@ -1,32 +1,47 @@
 "use client";
 
-import { SiLine } from "react-icons/si";
-import React from 'react';
-import Link from 'next/link';
-import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react';
-import { Separator } from '@/components/ui/separator';
+import { SiLine, SiTelegram } from "react-icons/si";
+import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <footer className="bg-white border-t">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* About */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-icyicy-dark">เกี่ยวกับเรา</h3>
+            <h3 className="text-lg font-semibold mb-4 text-iciycy-dark">เกี่ยวกับเรา</h3>
             <p className="text-sm text-gray-600 mb-4">
-              Krixies Shop - แบรนด์เสื้อผ้าผู้หญิง งานคุณภาพเกรดพรีเมี่ยม สำหรับใส่ทำงาน
+              Krixies Shop - แบรนด์เสื้อผ้าผู้หญิง งานคุณภาพเกรดพรีเมียม สำหรับใส่ทำงาน
               ออกงานเลี้ยง งานแต่ง เรียบหรู ดูแพง เน้นลายคลาสสิค
               ลายดอก ผ้าชีฟอง มีดีเทล เปิดมานาน 12 ปี การันตีคุณภาพ
             </p>
             <div className="flex space-x-3">
-  		<Link href="https://lin.ee/35BFvmQ" target="_blank" className="text-gray-600 hover:text-black">
-    		<SiLine size={20} />
- 		 </Link>
-  		<Link href="https://t.me/yourusername" target="_blank" className="text-gray-600 hover:text-black">
-  		  <SiTelegram size={20} />
- 		</Link>
-		</div>
+              <Link
+                href="https://lin.ee/35BFvnQ"
+                target="_blank"
+                className="text-gray-600 hover:text-black"
+              >
+                <SiLine size={20} />
+              </Link>
+              <Link
+                href="https://t.me/krixieshop"
+                target="_blank"
+                className="text-gray-600 hover:text-black"
+              >
+                <SiTelegram size={20} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
+
+		
           {/* Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-icyicy-dark">เมนูช่วยเหลือ</h3>
