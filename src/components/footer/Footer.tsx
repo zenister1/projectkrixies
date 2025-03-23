@@ -21,7 +21,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-3">
               <Link
-                href="https://lin.ee/35BFvnQ"
+                href="https://line.me/R/ti/p/@356mwvla?oat_content=url&ts=03232336"
                 target="_blank"
                 className="text-gray-600 hover:text-black"
               >

@@ -35,7 +35,7 @@ const Header = () => {
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-2">
             {/* ✅ LINE */}
-            <Link href="https://lin.ee/35BFvnQ" target="_blank" aria-label="LINE">
+            <Link href="https://line.me/R/ti/p/@356mwvla?oat_content=url&ts=03232336" target="_blank" aria-label="LINE">
               <SiLine size={16} className="text-gray-600 hover:text-gray-900" />
             </Link>
             {/* ✅ Telegram */}
