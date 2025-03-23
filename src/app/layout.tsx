@@ -17,7 +17,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "ICYICY SHOP - Women's Fashion Clothing",
+  title: "Krixies Shop - Women's Fashion Clothing",
   description: "Premium quality women's clothing brand since 2007",
 };
 

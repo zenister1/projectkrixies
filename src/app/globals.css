@@ -67,9 +67,9 @@
   font-family: var(--font-montserrat);
 }
 
-/* Custom ICYICY Shop specific styles */
+/* Custom Krixies Shop specific styles */
 @layer components {
-  .icyicy-card-hover {
+  .Krixies-card-hover {
     @apply transition-all duration-300 hover:shadow-md;
   }
 

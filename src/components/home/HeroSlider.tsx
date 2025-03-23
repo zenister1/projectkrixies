@@ -15,27 +15,27 @@ import Link from 'next/link';
 const sliderImages = [
   {
     src: "https://ext.same-assets.com/2516256495/2266562338.jpeg",
-    alt: "ICYICY Shop Slide 1",
+    alt: "Krixies Shop Slide 1",
     link: "/category/dress"
   },
   {
     src: "https://ext.same-assets.com/2516256495/1256189392.jpeg",
-    alt: "ICYICY Shop Slide 2",
+    alt: "Krixies Shop Slide 2",
     link: "/category/dress"
   },
   {
     src: "https://ext.same-assets.com/2516256495/3370248854.jpeg",
-    alt: "ICYICY Shop Slide 3",
+    alt: "Krixies Shop Slide 3",
     link: "/category/dress"
   },
   {
     src: "https://ext.same-assets.com/2516256495/2708821348.jpeg",
-    alt: "ICYICY Shop Slide 4",
+    alt: "Krixies Shop Slide 4",
     link: "/category/dress"
   },
   {
     src: "https://ext.same-assets.com/2516256495/4200946407.jpeg",
-    alt: "ICYICY Shop Slide 5",
+    alt: "Krixies Shop Slide 5",
     link: "/category/dress"
   }
 ];

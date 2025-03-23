@@ -13,8 +13,8 @@ export default function Home() {
 
         <section className="py-10 fade-in">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-2xl md:text-3xl font-montserrat font-semibold text-icyicy-dark mb-4">
-              ICYICY SHOP Since 2007
+            <h1 className="text-2xl md:text-3xl font-montserrat font-semibold text-Krixies-dark mb-4">
+              Krixies Shop Since 2007
             </h1>
             <p className="text-md italic text-gray-600 mb-8">
               "CACHET"

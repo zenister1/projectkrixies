@@ -392,7 +392,7 @@ export default function CheckoutPage() {
                 {paymentMethod === 'bank-transfer' && (
                   <div className="mt-3 p-3 bg-gray-50 text-sm space-y-2">
                     <p>ธนาคารกสิกรไทย</p>
-                    <p>ชื่อบัญชี: ICYICY SHOP</p>
+                    <p>ชื่อบัญชี: Krixies SHOP</p>
                     <p>เลขที่บัญชี: 123-4-56789-0</p>
                     <p className="text-xs text-gray-500 mt-2">* หลังจากทำการโอนเงิน กรุณาแจ้งชำระเงินในเมนู "แจ้งชำระเงิน" พร้อมแนบหลักฐานการโอนเงิน</p>
                   </div>
