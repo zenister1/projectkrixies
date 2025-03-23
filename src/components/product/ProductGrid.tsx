@@ -16,7 +16,7 @@ export interface Product {
   description?: string;
 }
 
-// Sample product data based on what we saw in the ICYICY shop
+// Sample product data based on what we saw in the Krixies Shop
 export const sampleProducts: Product[] = [
   {
     id: '198264',
@@ -63,7 +63,7 @@ export const sampleProducts: Product[] = [
     imageUrl: 'https://ext.same-assets.com/2516256495/4149304721.png',
     link: '/product/196578/jasmine-mist-dress-set-di15302',
     isNew: true,
-    description: 'เซ็ทเดรสสวยหวาน งานพรีเมี่ยมเกรด ICYICY'
+    description: 'เซ็ทเดรสสวยหวาน งานพรีเมี่ยมเกรด Krixies'
   },
   {
     id: '196522',
@@ -82,7 +82,7 @@ export const sampleProducts: Product[] = [
     link: '/product/196239/le-lita-dress-di15202',
     isNew: true,
     isBestSeller: true,
-    description: 'เดรสเนื้อผ้า Texture พิเศษ งาน Exclusive ของ icyicy'
+    description: 'เดรสเนื้อผ้า Texture พิเศษ งาน Exclusive ของ Krixies'
   },
   {
     id: '196238',
@@ -106,7 +106,7 @@ const ProductGrid = ({ title = "NEW ARRIVAL", products = sampleProducts }: Produ
     <div className="container mx-auto px-4 py-8">
       {title && (
         <div className="mb-8 text-center">
-          <h2 className="text-xl md:text-2xl font-semibold text-icyicy-dark">{title}</h2>
+          <h2 className="text-xl md:text-2xl font-semibold text-Krixies-dark">{title}</h2>
         </div>
       )}
 
