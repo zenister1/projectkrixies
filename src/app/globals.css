@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 33% 98%;
+    --foreground: 20 14.3% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --primary: 346.8 77.2% 49.8%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 5.9% 96%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 5.9% 96%;
+    --muted-foreground: 240 5.9% 40%;
+    --accent: 240 5.9% 96%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 346.8 77.2% 49.8%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 0 0% 98%;
+    --card: 20 14.3% 4.1%;
+    --card-foreground: 0 0% 98%;
+    --popover: 20 14.3% 4.1%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 346.8 77.2% 49.8%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 3.7% 16%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 16%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 16%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 16%;
+    --input: 240 3.7% 16%;
+    --ring: 346.8 77.2% 49.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.font-prompt {
+  font-family: var(--font-prompt);
+}
+
+.font-montserrat {
+  font-family: var(--font-montserrat);
+}
+
+/* Custom ICYICY Shop specific styles */
+@layer components {
+  .icyicy-card-hover {
+    @apply transition-all duration-300 hover:shadow-md;
+  }
+
+  /* Enhanced animations */
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .slide-in-right {
+    animation: slideInRight 0.5s ease-in-out;
+  }
+
+  .slide-in-left {
+    animation: slideInLeft 0.5s ease-in-out;
+  }
+
+  .slide-in-up {
+    animation: slideInUp 0.5s ease-in-out;
+  }
+
+  .bounce-in {
+    animation: bounceIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  /* Add hover animations to product cards */
+  .product-card-image {
+    @apply overflow-hidden;
+  }
+
+  .product-card-image img {
+    @apply transition-transform duration-500;
+  }
+
+  .product-card-image:hover img {
+    @apply scale-110;
+  }
+
+  /* Button hover effects */
+  .btn-hover-effect {
+    @apply relative overflow-hidden;
+  }
+
+  .btn-hover-effect::after {
+    content: '';
+    @apply absolute inset-0 bg-black bg-opacity-0 transition-all duration-300;
+  }
+
+  .btn-hover-effect:hover::after {
+    @apply bg-opacity-5;
+  }
+
+  /* Page transitions */
+  .page-transition-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .page-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+
+  .page-transition-exit {
+    opacity: 1;
+  }
+
+  .page-transition-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
