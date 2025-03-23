@@ -1,5 +1,6 @@
 "use client";
 
+import { SiLine } from "react-icons/si";
 import React from 'react';
 import Link from 'next/link';
 import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react';
@@ -14,14 +15,14 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-icyicy-dark">เกี่ยวกับเรา</h3>
             <p className="text-sm text-gray-600 mb-4">
-              ICYICY SHOP - แบรนด์เสื้อผ้าผู้หญิง งานคุณภาพเกรดพรีเมี่ยม สำหรับใส่ทำงาน
+              Krixies Shop - แบรนด์เสื้อผ้าผู้หญิง งานคุณภาพเกรดพรีเมี่ยม สำหรับใส่ทำงาน
               ออกงานเลี้ยง งานแต่ง เรียบหรู ดูแพง เน้นลายคลาสสิค
               ลายดอก ผ้าชีฟอง มีดีเทล เปิดมานาน 12 ปี การันตีคุณภาพ
             </p>
             <div className="flex space-x-3">
-              <Link href="https://www.facebook.com/icyicyshop" target="_blank" className="text-gray-600 hover:text-black">
-                <Facebook size={20} />
-              </Link>
+              <Link href="https://lin.ee/35BFvmQ" target="_blank" className="text-gray-600 hover:text-black">
+  		<SiLine size={20} />
+		</Link>
               <Link href="https://www.instagram.com/icyicyofficial/" target="_blank" className="text-gray-600 hover:text-black">
                 <Instagram size={20} />
               </Link>
@@ -99,7 +100,7 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin size={18} className="text-gray-600 mr-2 mt-0.5" />
                 <span className="text-sm text-gray-600">
-                  ICYICY SHOP <br />
+                  Krixies Shop <br />
                   เลขที่ 1234 ถนนสุขุมวิท <br />
                   กรุงเทพมหานคร 10110
                 </span>
@@ -121,7 +122,7 @@ const Footer = () => {
 
       <div className="container mx-auto px-4 py-4">
         <div className="text-center text-sm text-gray-500">
-          <p>© {new Date().getFullYear()} ICYICY SHOP. สงวนลิขสิทธิ์.</p>
+          <p>© {new Date().getFullYear()} Krixies Shop. สงวนลิขสิทธิ์.</p>
         </div>
       </div>
     </footer>
