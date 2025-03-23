@@ -1,14 +1,17 @@
 "use client";
 
 import { SiLine, SiTelegram } from "react-icons/si";
+import { MapPin, Phone, Mail } from "lucide-react";
 import React from "react";
 import Link from "next/link";
+import { Separator } from "@/components/ui/separator";
 
 const Footer = () => {
   return (
     <footer className="bg-white border-t">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* เกี่ยวกับเรา */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-iciycy-dark">เกี่ยวกับเรา</h3>
             <p className="text-sm text-gray-600 mb-4">
@@ -33,89 +36,39 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-        </div>
-      </div>
-    </footer>
-  );
-};
 
-export default Footer;
-
-		
-          {/* Links */}
+          {/* เมนูช่วยเหลือ */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-icyicy-dark">เมนูช่วยเหลือ</h3>
+            <h3 className="text-lg font-semibold mb-4 text-iciycy-dark">เมนูช่วยเหลือ</h3>
             <ul className="space-y-2">
-              <li>
-                <Link href="/about-us" className="text-sm text-gray-600 hover:text-black">
-                  เกี่ยวกับเรา
-                </Link>
-              </li>
-              <li>
-                <Link href="/how-to-order" className="text-sm text-gray-600 hover:text-black">
-                  วิธีการสั่งซื้อ
-                </Link>
-              </li>
-              <li>
-                <Link href="/payment-methods" className="text-sm text-gray-600 hover:text-black">
-                  วิธีการชำระเงิน
-                </Link>
-              </li>
-              <li>
-                <Link href="/shipping" className="text-sm text-gray-600 hover:text-black">
-                  การจัดส่งสินค้า
-                </Link>
-              </li>
-              <li>
-                <Link href="/return-policy" className="text-sm text-gray-600 hover:text-black">
-                  เงื่อนไขการเปลี่ยนคืนสินค้า
-                </Link>
-              </li>
+              <li><Link href="/about-us" className="text-sm text-gray-600 hover:text-black">เกี่ยวกับเรา</Link></li>
+              <li><Link href="/how-to-order" className="text-sm text-gray-600 hover:text-black">วิธีการสั่งซื้อ</Link></li>
+              <li><Link href="/payment-methods" className="text-sm text-gray-600 hover:text-black">วิธีการชำระเงิน</Link></li>
+              <li><Link href="/shipping" className="text-sm text-gray-600 hover:text-black">การจัดส่งสินค้า</Link></li>
+              <li><Link href="/return-policy" className="text-sm text-gray-600 hover:text-black">เงื่อนไขการเปลี่ยนคืนสินค้า</Link></li>
             </ul>
           </div>
 
-          {/* Categories */}
+          {/* หมวดหมู่สินค้า */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-icyicy-dark">หมวดหมู่สินค้า</h3>
+            <h3 className="text-lg font-semibold mb-4 text-iciycy-dark">หมวดหมู่สินค้า</h3>
             <ul className="space-y-2">
-              <li>
-                <Link href="/category/dress" className="text-sm text-gray-600 hover:text-black">
-                  เดรส
-                </Link>
-              </li>
-              <li>
-                <Link href="/category/top" className="text-sm text-gray-600 hover:text-black">
-                  เสื้อผ้า
-                </Link>
-              </li>
-              <li>
-                <Link href="/category/outerwear" className="text-sm text-gray-600 hover:text-black">
-                  เสื้อคลุม
-                </Link>
-              </li>
-              <li>
-                <Link href="/category/bottom" className="text-sm text-gray-600 hover:text-black">
-                  กางเกง กระโปรง
-                </Link>
-              </li>
-              <li>
-                <Link href="/category/sets" className="text-sm text-gray-600 hover:text-black">
-                  เซ็ท
-                </Link>
-              </li>
+              <li><Link href="/category/dress" className="text-sm text-gray-600 hover:text-black">เดรส</Link></li>
+              <li><Link href="/category/top" className="text-sm text-gray-600 hover:text-black">เสื้อผ้า</Link></li>
+              <li><Link href="/category/outerwear" className="text-sm text-gray-600 hover:text-black">เสื้อคลุม</Link></li>
+              <li><Link href="/category/bottom" className="text-sm text-gray-600 hover:text-black">กางเกง กระโปรง</Link></li>
+              <li><Link href="/category/sets" className="text-sm text-gray-600 hover:text-black">เซ็ท</Link></li>
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* ติดต่อเรา */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-icyicy-dark">ติดต่อเรา</h3>
+            <h3 className="text-lg font-semibold mb-4 text-iciycy-dark">ติดต่อเรา</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin size={18} className="text-gray-600 mr-2 mt-0.5" />
                 <span className="text-sm text-gray-600">
-                  Krixies Shop <br />
-                  เลขที่ 1234 ถนนสุขุมวิท <br />
-                  กรุงเทพมหานคร 10110
+                  Krixies Shop <br />เลขที่ 1234 ถนนสุขุมวิท<br />กรุงเทพมหานคร 10110
                 </span>
               </li>
               <li className="flex items-center">
